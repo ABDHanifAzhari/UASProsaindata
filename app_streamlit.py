@@ -64,7 +64,7 @@ with Preprocessing:
 
 with Modelling :
    st.title("Modelling")
-   model1 = pickle.load(open('model_knn1.sav', 'rb'))
+   model1 = pickle.load(open('model_knn.sav', 'rb'))
    model2 = pickle.load(open('model_svm.sav', 'rb'))
    model3 = pickle.load(open('model_dt.sav', 'rb'))
    
