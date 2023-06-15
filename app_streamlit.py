@@ -106,7 +106,7 @@ with Modelling :
    st.write ("Pilih metode yang ingin anda gunakan :")
    met1 = st.checkbox("KNN")
    met2 = st.checkbox("SVM")
-   met3 = st.checkbox("Decesion Tree")
+   met3 = st.checkbox("Decision Tree")
    submit2 = st.button("Pilih")
 
    if submit2:      
@@ -134,7 +134,7 @@ with Modelling :
          y_actual = scaler.inverse_transform(np.array(y_test).reshape(-1, 1))
          y_prediksi = scaler.inverse_transform(y_pred.reshape(-1, 1))
          mape=mean_absolute_percentage_error(y_prediksi, y_actual)
-         st.write("Nilai MAPE Menggunakan Decission Tree sebesar : ", (mape))
+         st.write("Nilai MAPE Menggunakan Decision Tree sebesar : ", (mape))
          st.write("Metode yang Anda gunakan Adalah Decision Tree")
       else :
          st.write("Anda Belum Memilih Metode")
