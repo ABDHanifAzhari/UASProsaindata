@@ -105,7 +105,7 @@ with Modelling :
 
    st.write ("Pilih metode yang ingin anda gunakan :")
    met1 = st.checkbox("KNN")
-   met2 = st.checkbox("Naive Bayes")
+   met2 = st.checkbox("SVM")
    met3 = st.checkbox("Decesion Tree")
    submit2 = st.button("Pilih")
 
