@@ -35,11 +35,9 @@ with Home:
    st.subheader('Data')
    data
    st.subheader('Deskripsi Data')
-   st.write("""Harga Open atau harga pembukaan adalah harga yang dipasang pada transaksi pertama kali dilakukan pada hari itu.""")
-   st.write("""Harga High (tertinggi) dan harga low (terendah) merupakan kisaran harga pergerakan harian dari saham tersebut dimana pemodal memiliki keberanian atau rasionalitas untuk melakukan posisi beli atau posisi jual.""")
-   st.write("""Harga Close (penutupan) dan Adj Close digunakan untuk menentukan signal beli atau signal jual dalam berbagai indikator teknikal, berbagai alat analisis teknikal.""")
-   st.write("""Dalam pengamatan Time Series adalah fungsi waktu, setiap data sesuai dengan contoh waktu, jadi ada hubungan antara titik data yang berbeda dari kumpulan data, kasus khusus deret waktu adalah deret waktu univariat di mana hanya memiliki satu fitur untuk ditangani""")
-   st.write("""Dalam sistem ini, kami mengambil data yang diperoleh dari finance.yahoo.com dengan link berikut :
+   st.write("""Saham (stock) merupakan salah satu instrumen pasar keuangan yang paling popular. Menerbitkan saham merupakan salah satu pilihan perusahaan ketika memutuskan untuk pendanaan perusahaan. Pada sisi yang lain, saham merupakan instrument investasi yang banyak dipilih para investor karena saham mampu memberikan tingkat keuntungan yang menarik""")
+   st.write("""Dalam sistem ini kami menggunakan data saham dari PT. Bank Mandiri""")
+   st.write("""Data tersebut kami peroleh dari finance.yahoo.com dengan link berikut :
    https://finance.yahoo.com/quote/BMRI.JK/history?p=BMRI.JK""")
    st.write("""Dimana Fitur yang ada di dalam data tersebut diantaranya :""")
    st.text("""
@@ -48,6 +46,12 @@ with Home:
             3) Harga Close
             4) Adj Close
             5) Volume""")
+   st.write("""Harga Open atau harga pembukaan adalah harga yang dipasang pada transaksi pertama kali dilakukan pada hari itu.""")
+   st.write("""Harga High (tertinggi) dan harga low (terendah) merupakan kisaran harga pergerakan harian dari saham tersebut dimana pemodal memiliki keberanian atau rasionalitas untuk melakukan posisi beli atau posisi jual.""")
+   st.write("""Harga Close (penutupan) dan Adj Close digunakan untuk menentukan signal beli atau signal jual dalam berbagai indikator teknikal, berbagai alat analisis teknikal.""")
+   st.write("""Dalam pengamatan Time Series adalah fungsi waktu, setiap data sesuai dengan contoh waktu, jadi ada hubungan antara titik data yang berbeda dari kumpulan data, kasus khusus deret waktu adalah deret waktu univariat di mana hanya memiliki satu fitur untuk ditangani""")
+   
+   
   
 with Preprocessing:
    st.title("Preprocessing")
